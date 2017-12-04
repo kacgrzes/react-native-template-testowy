@@ -1,0 +1,17 @@
+{
+  "react": "^16.2.0",
+  "react-native-communications": "^2.2.1",
+  "react-native-device-info": "^0.12.1",
+  "react-native-indicators": "^0.10.0",
+  "react-native-keyboard-aware-scroll-view": "^0.4.1",
+  "react-native-loading-spinner-overlay": "^0.5.2",
+  "react-native-material-textfield": "^0.10.0",
+  "react-native-modal": "^4.1.0",
+  "react-native-navigation": "https://github.com/AdamGrzybkowski/react-native-navigation",
+  "react-native-search-box": "^0.0.13",
+  "react-redux": "^5.0.6",
+  "recompose": "^0.26.0",
+  "redux": "^3.7.2",
+  "redux-thunk": "^2.2.0",
+  "tcomb-form-native": "^0.6.10"
+}

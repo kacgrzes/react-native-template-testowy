@@ -1,0 +1,293 @@
+{
+  "Application": {
+    "button": "Aplikacje",
+    "listTitle": "Aplikacje"
+  },
+  "Channel": {
+    "applications": "Aplikacje",
+    "coupons": "Kupony",
+    "delete": "Usuń produkt z kanału",
+    "deleteConfirmation": "Czy na pewno chcesz usunąć produkt z tego kanału?",
+    "layout": "Szablony",
+    "offline": "OFFLINE",
+    "online": "ONLINE",
+    "productsList": "Lista produktów",
+    "range": "Ostatnie 7 dni",
+    "title": "Kanały"
+  },
+  "Client": {
+    "acceptNewsletter": "Zgoda na newsletter",
+    "acceptsMarketing": "Zgoda na newsletter",
+    "addClient": "Dodaj klienta",
+    "customerDetails": "Dane klienta",
+    "editClient": "Edytuj klienta",
+    "emptyStateDescription": "Po wciśnięciu + będziesz mieć możliwość dodania klienta i niezbędnych informacji o nim.",
+    "emptyStateTitle": "Dodaj klienta",
+    "listTitle": "Klienci",
+    "shippingAndBillingAdress": "Adres klienta i adres do wysyłki",
+    "title": "Klienci",
+    "titleAddressDetails": "Adres",
+    "titleDetails": "Klienci",
+    "titleMarketing": "Marketing"
+  },
+  "Common": {
+    "add": "Dodaj",
+    "addPhotoAlert": {
+      "chooseFromLibrary": "Wybierz z biblioteki",
+      "takePhoto": "Zrób zdjęcie",
+      "title": "Dodaj obraz"
+    },
+    "back": "Wróć",
+    "call": "Zadzwoń",
+    "cancel": "Anuluj",
+    "change": "Zmień",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "email": "E-mail",
+    "emptyStateDefaultDescription": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.",
+    "emptyStateDefaultTitle": "Create new…",
+    "generalEmptyStateDefaultDescription": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.",
+    "generalEmptyStateDefaultTitle": "Oops, there's nothing to display here",
+    "nothingToDisplayDescription": "Zaloguj się do Shoplo na swoim komputerze i dodaj brakujące informacje.",
+    "nothingToDisplayTitle": "Ojej, brakuje danych do wyświetlenia",
+    "ok": "OK",
+    "optional": "opcjonalnie",
+    "required": "To pole jest wymagane",
+    "requiredField": "To pole jest wymagane",
+    "save": "Zapisz",
+    "saveChanges": "Zapisz zmiany",
+    "search": "Szukaj",
+    "select": "Wybierz",
+    "somethingWentWrong": "Ups, coś poszło nie tak. Proszę spróbuj jeszcze raz."
+  },
+  "Coupon": {
+    "button": "Kupony",
+    "description": "Udostępniam Ci \"{{name}}\" ze zniżką {{discount}}",
+    "listTitle": "Kupony"
+  },
+  "Dashboard": {
+    "addChannel": {
+      "button": "Zamknij",
+      "text": "Aby dodać więcej kanałów sprzedaży, zaloguj się do aplikacji Shoplo na komputerze. ",
+      "title": "Dodaj kanał"
+    },
+    "apologise": "PRZEPRASZAMY",
+    "customDateRange": {
+      "button": "Ustaw datę",
+      "title": "Wybierz datę"
+    },
+    "datePicker": {
+      "error": "Nieznany format czasu",
+      "selectDate": "Wybierz datę"
+    },
+    "noData": "Brak Danych",
+    "revenueByChannel": "Przychód z kanału",
+    "timeRangeSelector": {
+      "button": "Ustaw datę",
+      "Custom": "Inna data",
+      "customLabel": "Inna data",
+      "fromDate": "Od",
+      "Month": "Miesiąc",
+      "monthLabel": "Miesiąc",
+      "title": "Zakres czasu",
+      "toDate": "Do",
+      "Week": "Tydzień",
+      "weekLabel": "Tydzień",
+      "Year": "Rok",
+      "yearLabel": "Rok"
+    },
+    "title": "Pulpit",
+    "topProductsTitle": "Najlepsze produkty (Zamówienia)",
+    "topReferralsTitle": "Najlepsze polecenia",
+    "total": "Razem",
+    "totalRevenue": {
+      "dateLabel": {
+        "day": "Czas [dni]",
+        "month": "Czas [miesiące]",
+        "week": "Czas [tygonie]",
+        "year": "Czas [lata]"
+      },
+      "title": "Całkowity przychód"
+    }
+  },
+  "Error": {
+    "noConnection": "Połącznie z internetem jest bardzo wolne lub zostało przerwane.",
+    "unknown": "Coś poszło nie tak :("
+  },
+  "Form": {
+    "barcode": "Kod kreskowy",
+    "chooseCountry": "Wybierz kraj",
+    "city": "Miasto",
+    "emailAddress": "E-mail",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "phoneNumber": "Numer telefonu",
+    "postalCode": "Kod pocztowy",
+    "street": "Ulica"
+  },
+  "Layout": {
+    "button": "Szablony",
+    "listTitle": "Szablony",
+    "preview": "Podgląd"
+  },
+  "Login": {
+    "backToLogin": "Wróć do ekranu logowania",
+    "button": "Zaloguj się",
+    "chooseAccount": {
+      "subtitle": "Wybierz kanały sprzedaży, do których chcesz mieć dostęp w aplikacji mobilnej.",
+      "title": "Wybierz konto"
+    },
+    "confirmPassword": {
+      "button": "Przejdź do swojego konta",
+      "subtitle": "Zaloguj się do wybranego kanału sprzedaż, aby mieć do niego dostęp w aplikacji mobilnej.",
+      "title": "Potwierdź hasło"
+    },
+    "loginLabel": "Logowanie",
+    "noAccount": "Nie masz konta? Zarejestruj się!",
+    "noPassword": "Nie pamiętam hasła",
+    "passwordLabel": "Hasło",
+    "passwordRecovery": "Nie pamiętasz swojego hasła?",
+    "recoveryDescription": "Wyślemy Ci instrukcje dotyczące resetowania hasła.",
+    "sendRecoveryInstructions": "Wyślij instrukcje",
+    "wrongEmail": "Nieprawidłowy email",
+    "wrongPassword": "Przynajmniej 6 znaków",
+    "yourEmail": "Twój email",
+    "yourPassword": "Twoje hasło"
+  },
+  "Menu": {
+    "logout": "Wyloguj się",
+    "notificationSettings": "Ustawienia notyfikacji",
+    "search": "Szukaj",
+    "toDos": "Do zrobienia"
+  },
+  "NotificationSettings": {
+    "newOrder": "Nowe zamówienie",
+    "paymentStatus": "Status płatności",
+    "screenTitle": "Notyfikacje"
+  },
+  "Onboarding": {
+    "dashboard": {
+      "addChannel": {
+        "text": "Za pomocą przycisku + będziesz mieć możliwość dodania nowego kanału sprzedaży.",
+        "title": "Dodaj nowy kanał"
+      },
+      "overview": {
+        "text": "Po wciśnięciu \"Razem\" zobaczysz podsumowaniu Twojej sprzedaży na wszystkich kanałach a po kliknięciu w ikonę danego kanału, sprawdzisz jego wynik.",
+        "title": "Podsumowanie"
+      }
+    },
+    "gotIt": "Rozumiem",
+    "products": {
+      "addProduct": {
+        "text": "Po wciśnięciu + będziesz mieć możliwość dodania produktu i niezbędnych informacji o nim.",
+        "title": "Dodaj nowy produkt"
+      },
+      "quantityMultipleProducts": {
+        "text": "Po wciśnięciu ikony pioruna będziesz mieć możliwość wybrania wielu produktów. Wybierz \"Zmień\", aby zaktualizować stany magazynowe wielu produktów naraz. ",
+        "title": "Zmień ilość wielu produktów"
+      },
+      "quantitySingleProduct": {
+        "text": "Przesuń w lewo, aby zmienić stany magazynowe danego produktu. ",
+        "title": "Zmień ilość pojedynczego produktu"
+      }
+    }
+  },
+  "Order": {
+    "billingAddress": "Adres rachunku",
+    "channelTitle": "Kanał",
+    "choose": "Wybierz",
+    "customerDetails": "Szczegóły klienta",
+    "differentBillingAddress": "Adres rachunku jest inny",
+    "editAddress": "Edytuj adres",
+    "enterManually": "Wpisz ręcznie",
+    "fulfill": "Przygotuj przesyłkę",
+    "Fulfill": "Przygotuj",
+    "noOrders": "Brak zamówień",
+    "note": "Notatka",
+    "notes": "Notatki",
+    "Order": "Zamówienie",
+    "orderItemsTitle": "Zamówione produkty",
+    "Orders": "Zamówienia",
+    "paid": {
+      "button": "Oznacz jako zapłacone",
+      "subtitle": "Podsumowanie płatności",
+      "title": "Zapłacone"
+    },
+    "payment": {
+      "discount": "Zniżka",
+      "shipping": "Wysyłka",
+      "subtotal": "Suma",
+      "title": "Płatność",
+      "total": "Razem"
+    },
+    "quantity": "Ilość:",
+    "selectCarrier": "Wybierz kuriera",
+    "shippingAddress": "Adres dostawy",
+    "shippingAndBillingAddress": "Adres dostawy i płatności",
+    "shippingCarrier": "Wybierz firmę dostawczą",
+    "shippingDetails": "Szczegóły wysyłki",
+    "shippingTitle": "Wysyłka",
+    "sku": "SKU:",
+    "statusFulfilled": "zrealizowane",
+    "statusPaid": "zapłacono",
+    "statusPending": "do zapłaty",
+    "statusUnfulfilled": "w realizacji",
+    "timeline": "OŚ CZASU",
+    "title": "Zamówienia",
+    "toFulfill": "Do zrealizowania",
+    "trackingNumber": "Numer przesyłki",
+    "useApp": "Uzyj aplikacji",
+    "order_1": "zamówień",
+    "order_2": "zamówień",
+    "order_0": "zamówienie"
+  },
+  "Product": {
+    "addVariant": "Dodaj Wariant",
+    "basicInfo": "Informacje podstawowe",
+    "deleteVariant": "Usuń wariant",
+    "deleteVariantConfirmationAlert": "Czy na pewno chcesz usunąć ten wariant?",
+    "editTitle": "Edytuj tytuł",
+    "inStock": "W magazynie",
+    "internalProductName": "Wewnętrzna nazwa produktu",
+    "inventoryDetails": "Szczegóły asortymentu",
+    "inventoryInfo": "Informacje o asortymencie",
+    "inventoryList": "Asortyment",
+    "listTitle": "Lista produktów",
+    "photos": "Zdjęcia",
+    "productList": "Produkty",
+    "products": "Produkty",
+    "quantity": "Ilość",
+    "salesChannel": "Kanał sprzedaży",
+    "sku": "SKU",
+    "title": "Produkty",
+    "totalInStock": "Ilość w magazynie",
+    "variantProperties": "Opcje wariantu",
+    "variants": "Warianty",
+    "deletePhotoConfimationAlert_1": "Czy na pewno chcesz usunąć to zdjęcia?",
+    "deletePhotoConfimationAlert_0": "Czy na pewno chcesz usunąć to zdjęcie?",
+    "deletePhotoConfimationAlert_3": "Czy na pewno chcesz usunąć to zdjęcie?",
+    "photosSelected_1": "Wybrano {{count}} zdjęć",
+    "photosSelected_0": "Wybrano {{count}} zdjęcie",
+    "photosSelected_3": "Wybrano {{count}} zdjęć",
+    "variant_1": "warianty",
+    "variant_2": "wariantów",
+    "variant_0": "wariant"
+  },
+  "Search": {
+    "emptyRecentSearches": "NIE MA HISTORII WYSZUKIWANIA DO WYŚWIETLENIA",
+    "loadingRecentSearches": "TWOJE OSTATNIE WYSZYKIWANIA POJAWIĄ SIĘ TU ZA CHWILĘ",
+    "noResults": "Brak wyników",
+    "recentSearch": "OSTATNIE WYSZUKIWANIA",
+    "seeAll": "Zobacz wszystkie ({{count}})"
+  },
+  "ToDo": {
+    "emptyStateDescription": "Dobra robota! Teraz czas, aby zabrać się do pracy,  wypromować sklep i zwiększyć sprzedaż.",
+    "emptyStateTitle": "Zrobiłeś już wszystko!",
+    "screenTitle": "Do zrobienia"
+  },
+  "Notification": {
+    "unreadNotification_1": "Masz {{actionsCount}} akcji do wykonania",
+    "unreadNotification_2": "Masz {{actionsCount}} akcji do wykonania",
+    "unreadNotification_0": "Masz {{actionsCount}} akcję do wykonania"
+  }
+}

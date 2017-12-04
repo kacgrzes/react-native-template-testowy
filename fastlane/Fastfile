@@ -1,0 +1,202 @@
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "2.57.1"
+
+default_platform :ios
+
+platform :ios do
+
+
+    desc "Submit a new app build to TestFlight for DESMART"
+    lane :test do
+ 	    build_shoplo_app(
+            development: false,
+            app_identifier: "com.desmart.shoplo",
+            scheme: "Shoplo"
+        )
+        upload_testflight_for_desmart(
+            app_identifier: "com.desmart.shoplo",
+            team_id: "999184",
+            username: "dooshek@desmart.com"
+        )
+    end
+
+
+    desc "Submit a new app build to TestFlight for DESMART and Shoplo"
+    lane :beta do
+ 	    build_shoplo_app(
+            development: false,
+            app_identifier: "com.desmart.shoplo",
+            scheme: "Shoplo"
+        )
+        upload_testflight_for_all(
+            app_identifier: "com.desmart.shoplo",
+            team_id: "999184",
+            username: "dooshek@desmart.com"
+        )
+    end
+
+    desc "Submit a new app build to TestFlight for DESMART and Shoplo"
+    lane :prod do
+ 	    build_shoplo_app(
+            development: false,
+            app_identifier: "com.desmart.shoplo",
+            scheme: "Shoplo Production"
+        )
+        upload_testflight_for_all(
+            app_identifier: "com.desmart.shoplo",
+            team_id: "999184",
+            username: "dooshek@desmart.com"
+        )
+    end
+
+
+    after_all do |lane|
+        notification(message: "Lane #{lane} completed successfully!")
+        clean_build_artifacts(exclude_pattern: ".*\.mobileprovision")
+    end
+
+
+    error do |lane, exception, options|
+        clean_build_artifacts(exclude_pattern: ".*\.mobileprovision")
+    end
+
+
+    private_lane :build_shoplo_app do |options|
+        incrementBuild
+        build_app(
+            development: options[:development],
+            app_identifier: options[:app_identifier],
+            scheme: options[:scheme],
+            git_branch: "Shoplo",
+            team_id: "4X63LJJR9V",
+            username: "dooshek@desmart.com"
+        )
+        commitAndPushIncrementedBuild
+    end
+
+
+    desc "Bump build number"
+    private_lane :incrementBuild do
+        ensure_git_branch(branch: "develop")
+        increment_build_number(
+            xcodeproj: "ios/Shoplo.xcodeproj"
+        )
+    end
+
+
+    desc "Commit & push to remote"
+    private_lane :commitAndPushIncrementedBuild do
+        ensure_git_branch(branch: "develop")
+        commit_version_bump(
+            xcodeproj: "ios/Shoplo.xcodeproj",
+            message: 'Bump build number by fastlane',
+            force: true
+        )
+        push_to_git_remote
+    end
+
+
+    private_lane :build_app do |options|
+        register_devices(
+            devices_file: "fastlane/devices.txt",
+            username: options[:username],
+            team_id: options[:team_id]
+        )
+        match(
+            force_for_new_devices: options[:development] ? true : false,
+            app_identifier: options[:app_identifier],
+            type: options[:development] ? "development" : "appstore",
+            username: options[:username],
+            git_branch: options[:git_branch],
+            team_id: options[:team_id]
+        )
+        gym(
+            project: "ios/Shoplo.xcodeproj",
+            scheme: options[:scheme],
+            clean: true,
+            include_bitcode: options[:development] == false
+        )
+    end
+
+
+    private_lane :upload_testflight_for_desmart do |options|
+        testflight(
+            username: options[:username],
+            team_id: options[:team_id],
+            app_identifier: options[:app_identifier],
+            skip_waiting_for_build_processing: false,
+            skip_submission: false,
+            distribute_external: true,
+            testers_file_path: "testers.csv",
+            groups: ["DESMART"],
+            beta_app_feedback_email: "l.bargielska@desmart.com",
+            beta_app_description: "Zbuduj swój wymarzony sklep internetowy. Zaprezentuj światu swoją markę.",
+            changelog: "Test all new features"
+        )
+    end
+
+
+    private_lane :upload_testflight_for_all do |options|
+        testflight(
+            username: options[:username],
+            team_id: options[:team_id],
+            app_identifier: options[:app_identifier],
+            skip_waiting_for_build_processing: false,
+            skip_submission: false,
+            distribute_external: true,
+            testers_file_path: "testers.csv",
+            groups: ["DESMART","Shoplo"],
+            beta_app_feedback_email: "l.bargielska@desmart.com",
+            beta_app_description: "Zbuduj swój wymarzony sklep internetowy. Zaprezentuj światu swoją markę.",
+            changelog: "Test all new features"
+        )
+    end
+
+
+end
+
+platform :android do
+
+  desc "Submit a new Beta Build to Crashlytics Beta for Testers"
+  lane :test do
+    gradle(
+        task: "assembleRelease",
+        project_dir: "android/"
+    )
+    crashlytics(
+        api_token: "9a65c47f80a4680a8ac59f005eb216ecf46cc0e6",
+        build_secret: "ad3aeddecfb9ccf340f95130177da73d2f90aeb78555500610c61cda52e9f61a",
+        emails: "orzech@desmart.com, grzyb@desmart.com, kacgrzes@gmail.com",
+    )
+  end
+
+  desc "Submit a new Beta Build to Crashlytics Beta for Client"
+  lane :beta do
+    gradle(
+        task: "assembleRelease",
+        project_dir: "android/"
+    )
+    crashlytics(
+        api_token: "9a65c47f80a4680a8ac59f005eb216ecf46cc0e6",
+        build_secret: "ad3aeddecfb9ccf340f95130177da73d2f90aeb78555500610c61cda52e9f61a",
+        emails: "orzech@desmart.com, grzyb@desmart.com, kacgrzes@gmail.com, michal.ptaszynski@shoplo.com, karina@shoplo.com, lukasz.riemer@gmail.com, tech@shoplo.com, pawel.lech@shoplo.com, anastasiia.nikitchenko@shoplo.com, mariusz.soltysiak@shoplo.com, krystian.olszewski@shoplo.pl, ivanna@shoplo.com, karolina.adamiuk@shoplo.com, piotr.zawada@shoplo.pl, patryk.pawlikowski@shoplo.com, damian.bossak@gmail.com, julia.ulida@shoplo.com, monika.kislowska@shoplo.pl, natalia.sniezek@shoplo.pl, lukasz.haladus@shoplo.com, paulina.bielecka@shoplo.pl, bartosz.gronkiewicz@shoplo.pl, kinga.hulewicz@shoplo.pl, wojciech.hadada@gmail.com, katarzyna.dolezal@shoplo.com, basia.kazmierczak@shoplo.com, justyna.adamcewicz@shoplo.pl, anna.obrycka@shoplo.pl, help@shoplo.com, contact@shoplo.com, pakietkorzysci@shoplo.pl, ordon1313@gmail.com"
+    )
+  end
+
+  desc "Submit a new Production Build to Crashlytics Beta for Client"
+  lane :prod do
+    # Add .env.prod config
+    gradle(
+        task: "assembleRelease",
+        project_dir: "android/"
+    )
+    crashlytics(
+        api_token: "9a65c47f80a4680a8ac59f005eb216ecf46cc0e6",
+        build_secret: "ad3aeddecfb9ccf340f95130177da73d2f90aeb78555500610c61cda52e9f61a",
+        emails: "orzech@desmart.com, grzyb@desmart.com, kacgrzes@gmail.com, michal.ptaszynski@shoplo.com, karina@shoplo.com, lukasz.riemer@gmail.com, tech@shoplo.com, pawel.lech@shoplo.com, anastasiia.nikitchenko@shoplo.com, mariusz.soltysiak@shoplo.com, krystian.olszewski@shoplo.pl, ivanna@shoplo.com, karolina.adamiuk@shoplo.com, piotr.zawada@shoplo.pl, patryk.pawlikowski@shoplo.com, damian.bossak@gmail.com, julia.ulida@shoplo.com, monika.kislowska@shoplo.pl, natalia.sniezek@shoplo.pl, lukasz.haladus@shoplo.com, paulina.bielecka@shoplo.pl, bartosz.gronkiewicz@shoplo.pl, kinga.hulewicz@shoplo.pl, wojciech.hadada@gmail.com, katarzyna.dolezal@shoplo.com, basia.kazmierczak@shoplo.com, justyna.adamcewicz@shoplo.pl, anna.obrycka@shoplo.pl, help@shoplo.com, contact@shoplo.com, pakietkorzysci@shoplo.pl, ordon1313@gmail.com"
+    )
+  end
+
+end
+

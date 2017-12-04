@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "flow",
+    "react-native"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"]
+    }]    
+  ],
+  "env": {
+    "development": {
+      "plugins": [["flow-react-proptypes", { "ignoreNodeModules": true }]]
+    },
+    "production": {
+      "plugins": [
+        ["transform-react-remove-prop-types", {
+          "mode": "wrap",
+          "plugins": [
+            ["babel-plugin-flow-react-proptypes", { "omitRuntimeTypeExport": true, "ignoreNodeModules": true }]
+          ]
+        }]
+      ]
+    }
+  }
+}

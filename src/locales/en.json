@@ -1,0 +1,288 @@
+{
+  "Application": {
+    "button": "Applications",
+    "listTitle": "Applications"
+  },
+  "Channel": {
+    "applications": "Applications",
+    "coupons": "Coupons",
+    "delete": "Remove product from channel",
+    "deleteConfirmation": "Are you sure you want to remove this product from this channel?",
+    "layout": "Themes",
+    "offline": "OFFLINE",
+    "online": "ONLINE",
+    "productsList": "Product list",
+    "range": "Last 7 days",
+    "title": "Channels"
+  },
+  "Client": {
+    "acceptNewsletter": "Accepts newsletter",
+    "acceptsMarketing": "Accepts newsletter",
+    "addClient": "Add customer",
+    "customerDetails": "Customer details",
+    "editClient": "Edit customer",
+    "emptyStateDescription": "Hit the + button to add a new customer and all of their important information.",
+    "emptyStateTitle": "Add a customer",
+    "listTitle": "Customers",
+    "shippingAndBillingAdress": "Shipping and billing address",
+    "title": "Customers",
+    "titleAddressDetails": "Address details",
+    "titleDetails": "Customer details",
+    "titleMarketing": "Marketing"
+  },
+  "Common": {
+    "add": "Add",
+    "addPhotoAlert": {
+      "chooseFromLibrary": "Choose from library",
+      "takePhoto": "Take a photo",
+      "title": "Add image"
+    },
+    "back": "Back",
+    "call": "Call",
+    "cancel": "Cancel",
+    "change": "Change",
+    "delete": "Delete",
+    "edit": "Edit",
+    "email": "E-mail",
+    "emptyStateDefaultDescription": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.",
+    "emptyStateDefaultTitle": "Create new…",
+    "generalEmptyStateDefaultDescription": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.",
+    "generalEmptyStateDefaultTitle": "Oops, there's nothing to display here",
+    "nothingToDisplayDescription": "Access Shoplo on a computer to get the ball rolling.",
+    "nothingToDisplayTitle": "Oops, there's nothing to display here",
+    "ok": "OK",
+    "optional": "optional",
+    "required": "This field is required",
+    "requiredField": "This field is required",
+    "save": "Save",
+    "saveChanges": "Save changes",
+    "search": "Search",
+    "select": "Select",
+    "somethingWentWrong": "Something went wrong. Please try again."
+  },
+  "Coupon": {
+    "button": "Coupons",
+    "description": "I'm sharing the code \"{{name}}\" with you for {{discount}} discount",
+    "listTitle": "Coupons"
+  },
+  "Dashboard": {
+    "addChannel": {
+      "button": "Close",
+      "text": "You’re able to add more channels by using the desktop version of Shoplo. Go to app.shoplo.com and sign in, add your channel and start selling!",
+      "title": "Add Channel"
+    },
+    "apologise": "SORRY",
+    "customDateRange": {
+      "button": "Set date range",
+      "title": "Custom date range"
+    },
+    "datePicker": {
+      "error": "Cannot use this date",
+      "selectDate": "Select date"
+    },
+    "noData": "No data",
+    "revenueByChannel": "Revenue by channel",
+    "timeRangeSelector": {
+      "button": "Set date",
+      "Custom": "Custom",
+      "customLabel": "Custom",
+      "fromDate": "From",
+      "Month": "Month",
+      "monthLabel": "Month",
+      "title": "Date range",
+      "toDate": "To",
+      "Week": "Week",
+      "weekLabel": "Week",
+      "Year": "Year",
+      "yearLabel": "Year"
+    },
+    "title": "Dashboard",
+    "topProductsTitle": "Top Products (Orders)",
+    "topReferralsTitle": "Top Referrals",
+    "total": "Total",
+    "totalRevenue": {
+      "dateLabel": {
+        "day": "Time [days]",
+        "month": "Time [months]",
+        "week": "Time [weeks of year]",
+        "year": "Time [years]"
+      },
+      "title": "Total revenue"
+    }
+  },
+  "Error": {
+    "noConnection": "Internet connection is very slow or unavailable",
+    "unknown": "Something went wrong :("
+  },
+  "Form": {
+    "barcode": "Barcode",
+    "chooseCountry": "Choose country",
+    "city": "City",
+    "emailAddress": "E-mail address",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phoneNumber": "Phone number",
+    "postalCode": "Postal code",
+    "street": "Address 1"
+  },
+  "Layout": {
+    "button": "Themes",
+    "listTitle": "Themes",
+    "preview": "Preview"
+  },
+  "Login": {
+    "backToLogin": "Back to log in screen",
+    "button": "Sign In",
+    "chooseAccount": {
+      "subtitle": "Select your sales channels you wish to access on the mobile app.",
+      "title": "Select your account"
+    },
+    "confirmPassword": {
+      "button": "Go to your account",
+      "subtitle": "Sign in to your sales channel in order to access it from the mobile app. ",
+      "title": "Confirm your password"
+    },
+    "loginLabel": "Login",
+    "noAccount": "Don’t have an account? Sign Up!",
+    "noPassword": "I don’t remember my password",
+    "passwordLabel": "Password",
+    "passwordRecovery": "Oh, you forgot your password?",
+    "recoveryDescription": "We’ll email you instructions on how to reset it.",
+    "sendRecoveryInstructions": "Send Recovery Instructions",
+    "wrongEmail": "Invalid email",
+    "wrongPassword": "At least 6 characters",
+    "yourEmail": "Your email",
+    "yourPassword": "Your password"
+  },
+  "Menu": {
+    "logout": "Logout",
+    "notificationSettings": "Notification settings",
+    "search": "Search",
+    "toDos": "To-do's"
+  },
+  "NotificationSettings": {
+    "newOrder": "New order",
+    "paymentStatus": "Payment status",
+    "screenTitle": "Push notifications"
+  },
+  "Onboarding": {
+    "dashboard": {
+      "addChannel": {
+        "text": "Click the + button to add a new sales channel.",
+        "title": "Add a new channel"
+      },
+      "overview": {
+        "text": "Tap  \"Total\" to see an overview of all your sales or select a channel individually.",
+        "title": "Overview"
+      }
+    },
+    "gotIt": "Got it!",
+    "products": {
+      "addProduct": {
+        "text": "Hit the + button to add a new product and all of its important details.",
+        "title": "Add a new product"
+      },
+      "quantityMultipleProducts": {
+        "text": "Tap the thunderbolt to select multiple products. Then tap \"Change\" and adjust your quantities.",
+        "title": "Change quantity of multiple products"
+      },
+      "quantitySingleProduct": {
+        "text": "Swipe to the left to change stock quantities.",
+        "title": "Change quantity of single product"
+      }
+    }
+  },
+  "Order": {
+    "billingAddress": "Billing address",
+    "channelTitle": "Channel",
+    "choose": "Choose",
+    "customerDetails": "Customer details",
+    "differentBillingAddress": "Billing address is different",
+    "editAddress": "Edit address",
+    "enterManually": "Enter manually",
+    "fulfill": "Fulfil products",
+    "Fulfill": "Fulfil",
+    "noOrders": "No orders",
+    "note": "Note",
+    "notes": "Notes",
+    "Order": "Order",
+    "orderItemsTitle": "Ordered products",
+    "Orders": "Orders",
+    "paid": {
+      "button": "Mark as paid",
+      "subtitle": "Payment summary",
+      "title": "Paid"
+    },
+    "payment": {
+      "discount": "Discount",
+      "shipping": "Shipping",
+      "subtotal": "Subtotal",
+      "title": "Payment",
+      "total": "Total"
+    },
+    "quantity": "Quantity:",
+    "selectCarrier": "Delivery method",
+    "shippingAddress": "Shipping address",
+    "shippingAndBillingAddress": "Shipping and billing address",
+    "shippingCarrier": "Choose shipping method",
+    "shippingDetails": "Shipping details",
+    "shippingTitle": "Shipping",
+    "sku": "SKU:",
+    "statusFulfilled": "fulfilled",
+    "statusPaid": "paid",
+    "statusPending": "pending",
+    "statusUnfulfilled": "unfulfilled",
+    "timeline": "TIMELINE",
+    "title": "Orders",
+    "toFulfill": "To be fulfiled",
+    "trackingNumber": "Tracking number",
+    "useApp": "Use application",
+    "order": "order",
+    "order_plural": "orders"
+  },
+  "Product": {
+    "addVariant": "Add variant",
+    "basicInfo": "Basic info",
+    "deleteVariant": "Delete variant",
+    "deleteVariantConfirmationAlert": "Are you sure you want to delete this variant?",
+    "editTitle": "Edit title",
+    "inStock": "In stock",
+    "internalProductName": "Internal product name",
+    "inventoryDetails": "Inventory details",
+    "inventoryInfo": "Inventory info",
+    "inventoryList": "Inventory list",
+    "listTitle": "Products list",
+    "photos": "Photos",
+    "productList": "Product list",
+    "products": "Products",
+    "quantity": "Quantity",
+    "salesChannel": "Sales Channel",
+    "sku": "SKU",
+    "title": "Products",
+    "totalInStock": "Total in stock",
+    "variantProperties": "Variant options",
+    "variants": "Variants",
+    "deletePhotoConfimationAlert": "Are you sure you want to delete this photo?",
+    "deletePhotoConfimationAlert_plural": "Are you sure you want to delete these photos?",
+    "photosSelected": "{{count}} Photo selected",
+    "photosSelected_plural": "{{count}} Photos selected",
+    "variant": "Variant",
+    "variant_plural": "Variants"
+  },
+  "Search": {
+    "emptyRecentSearches": "NO SEARCH HISTORY TO DISPLAY",
+    "loadingRecentSearches": "YOUR RECENT SEARCHES WILL APPEAR HERE IN A SECONDS",
+    "noResults": "No results",
+    "recentSearch": "RECENT SEARCHES",
+    "seeAll": "See All ({{count}})"
+  },
+  "ToDo": {
+    "emptyStateDescription": "Well done! Now it’s time to get to work, promote your store and watch the sales roll in!",
+    "emptyStateTitle": "You've done everything!",
+    "screenTitle": "To-do's"
+  },
+  "Notification": {
+    "unreadNotification": "You have {{actionsCount}} action to do",
+    "unreadNotification_plural": "You have {{actionsCount}} actions to do"
+  }
+}

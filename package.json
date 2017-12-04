@@ -1,0 +1,73 @@
+{
+  "name": "react-native-template-desmart",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start-clear": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && yarn cache clean && yarn && yarn start -- --reset-cache",
+    "start-device": "react-native run-ios --device 'iPhone 6+ DeSmart'",
+    "test-e2e": "detox build && detox test",
+    "test-e2e-reuse": "detox test --reuse",
+    "test": "yarn test-e2e",
+    "flow": "node_modules/.bin/flow",
+    "lint": "standard --verbose | snazzy",
+    "lint-fix": "standard --fix",
+    "prestorybook": "rnstl",
+    "storybook": "storybook start -p 7007",
+    "precommit": "yarn lint",
+    "clear-cache": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && yarn cache clean && yarn"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype"
+    ],
+    "ignore": [
+      "/storybook/storyLoader.js",
+      "/flow-typed/npm/*.js"
+    ],
+    "globals": [
+      "element",
+      "by",
+      "detox",
+      "device",
+      "expect",
+      "element",
+      "by",
+      "__DEV__",
+      "GLOBAL"
+    ],
+    "envs": [
+      "node",
+      "mocha",
+      "jasmine"
+    ]
+  },
+  "detox": {
+    "specs": "./__e2e__",
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/Shoplo.app",
+        "build": "xcodebuild -project ios/Shoplo.xcodeproj -scheme Shoplo -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 6"
+      }
+    }
+  },
+  "dependencies": {
+    "babel-plugin-module-resolver": "^3.0.0"
+  }
+}

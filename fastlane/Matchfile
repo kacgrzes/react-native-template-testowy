@@ -1,0 +1,6 @@
+git_url "git@git.desmart.com:iOS/certificates.git"
+git_branch "Shoplo"
+
+app_identifier "com.desmart.shoplo"
+username "dooshek@desmart.com"
+team_id "4X63LJJR9V"

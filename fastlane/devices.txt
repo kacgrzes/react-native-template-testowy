@@ -1,0 +1,11 @@
+Device ID	Device Name
+6347c4f9d092d6a7a9ef62927e5da968613e6cb8	DeSmart's iPhone 6 plus
+847dcaa09a3ebc9ce30f460c8940012760a0e100	DeSmart's iPhone 5
+ef88655f58375a295e9c4edb3240a48e94d89efc	DeSmart's iPad 3rd gen
+722b6f68c02e1b8601fddf3252caafafba53b431	Lucjan's iPhone 7
+441cb9c91fbcd142a1945498c5ffeff66c1acf46	Alex's iPhone 7
+c498b8b22a0e76e9dabc1ba4ca39febb0b72a58b	Orzech's iPhone
+e9943f52494cabdca4b6a16698790baacd3c2067	Eduardo's iPhone 5s
+32241d654ecb88363bfcd80cf7a32e5e3e770b4f	Daria's iPhone 5s
+dfe2d4a068b08e738206fd5feac82d38f7b25afe	Nina's iPhone5s
+78bd4658ee485a8574be9da3b942091d1a011a08	Majami's iPhone
